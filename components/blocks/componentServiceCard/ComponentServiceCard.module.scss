@@ -1,34 +1,29 @@
 // COMPONENT [ HERO BLOCK ] ###########################################################################################
 @import "scss/.base/module-index";
 
-.oHeroBlock {
+.oServicesListBlock {
   // A. GLOBAL STYLES +++++++++++++++++++++++++++++++++++++
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 
-  .oContentRow {
-    max-height: 600px;
-    @include aspect-ratio(auto, 56.5%);
-  }
-  .oContentBlock {
-    align-self: center;
-    .mImage {
-      max-width: 50%;
-      margin: 0 0 0 auto;
+  .oCard {
+    position: relative;
+    overflow: hidden;
+    .mCardBG {
+      @include position(absolute, 0);
+      background-size: cover;
+      background-position: center;
+      transition: 0.3s;
+      opacity: 0.6;
+      z-index: -1;
     }
-    .aImage {
-      margin: 0 0 50px auto;
-      display: block;
+    .mCardBody {
+      min-height: 350px;
     }
-    .aText {
-      text-align: center;
-    }
-  }
-
-  .dog-turd {
-    p {
-      color: red !important;
+    &:hover {
+      .mCardBG {
+        transform: scale(1.05);
+        opacity: 1;
+        transition: 0.6s;
+      }
     }
   }
 
@@ -47,15 +42,6 @@
   // C. MIN-WIDTH: 768px ++++++++++++++++++++++++++++++++++
 
   @media ($sm-up) {
-    .oContentBlock {
-      .mImage {
-        max-width: 300px;
-        margin: 0 auto;
-      }
-      .aImage {
-        margin: 20px auto;
-      }
-    }
   }
 
   // C. END +++++++++++++++++++++++++++++++++++++++++++++++
