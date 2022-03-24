@@ -8,7 +8,7 @@ function ComponentServiceCard({ servicesList }) {
     <div className={`${classes.oServicesListBlock} container`}>
       <div className={`${classes.oRow} row`}>
         {Services.sort(function (a, b) {
-          return new Date(b.sys.createdAt) - new Date(a.sys.createdAt);
+          return new Date(a.fields.order) - new Date(b.fields.order);
         }).map((Service) => (
           <article
             className={`${classes.oCard} col-12 col-md-6`}
