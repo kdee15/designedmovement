@@ -1,17 +1,30 @@
-// COMPONENT [ CONTENT BLOCK ] ########################################################################################
+// COMPONENT [ HERO BLOCK ] ###########################################################################################
+@import "scss/.base/module-index";
 
-@import "../../../scss/.base/module-index";
-
-.oServicesBlock {
+.oServicesListBlock {
   // A. GLOBAL STYLES +++++++++++++++++++++++++++++++++++++
 
-  .aBlockTitle {
-    margin: 50px auto 20px;
-    text-align: center;
-  }
-  .aBlockDesc {
-    margin: 0 auto 50px;
-    text-align: center;
+  .oCard {
+    position: relative;
+    overflow: hidden;
+    .mCardBG {
+      @include position(absolute, 0);
+      background-size: cover;
+      background-position: center;
+      transition: 0.3s;
+      opacity: 0.6;
+      z-index: -1;
+    }
+    .mCardBody {
+      min-height: 350px;
+    }
+    &:hover {
+      .mCardBG {
+        transform: scale(1.05);
+        opacity: 1;
+        transition: 0.6s;
+      }
+    }
   }
 
   // A. END +++++++++++++++++++++++++++++++++++++++++++++++

@@ -1,0 +1,62 @@
+// COMPONENT [ HERO BLOCK ] ###########################################################################################
+@import "scss/.base/module-index";
+
+.oCard {
+  // A. GLOBAL STYLES +++++++++++++++++++++++++++++++++++++
+
+  position: relative;
+  overflow: hidden;
+  .mCardBG {
+    @include position(absolute, 0);
+    background-size: cover;
+    background-position: center;
+    transition: 0.3s;
+    opacity: 0.6;
+    z-index: -1;
+  }
+  .mCardBody {
+    min-height: 350px;
+  }
+  &:hover {
+    .mCardBG {
+      transform: scale(1.05);
+      opacity: 1;
+      transition: 0.6s;
+    }
+  }
+
+  // A. END +++++++++++++++++++++++++++++++++++++++++++++++
+
+  // B. GRACEFUL DEGRADATION ++++++++++++++++++++++++++++++
+
+  @media ($md-dn) {
+  }
+
+  @media ($sm-dn) {
+  }
+
+  // B. END +++++++++++++++++++++++++++++++++++++++++++++++
+
+  // C. MIN-WIDTH: 768px ++++++++++++++++++++++++++++++++++
+
+  @media ($sm-up) {
+  }
+
+  // C. END +++++++++++++++++++++++++++++++++++++++++++++++
+
+  // D. MIN-WIDTH: 992px ++++++++++++++++++++++++++++++++++
+
+  @media ($md-up) {
+  }
+
+  // D. END +++++++++++++++++++++++++++++++++++++++++++++++
+
+  // E. MIN-WIDTH: 1200px +++++++++++++++++++++++++++++++++
+
+  @media ($lg-up) {
+  }
+
+  // E. END +++++++++++++++++++++++++++++++++++++++++++++++
+}
+
+// END OF FILE ########################################################################################################
