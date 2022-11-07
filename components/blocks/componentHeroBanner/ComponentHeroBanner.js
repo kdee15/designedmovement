@@ -4,8 +4,8 @@ import Image from "next/image";
 import React from "react";
 import ReactMarkdown from "react-markdown";
 
-function ComponentHeroBanner({ heroBanner }) {
-  const { description, image, logo, theme } = heroBanner;
+function ComponentHeroBanner({ componentData }) {
+  const { description, image, logo, theme } = componentData;
   return (
     <section
       className={`${classes.oHeroBlock} hero__${theme}`}
