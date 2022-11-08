@@ -1,7 +1,7 @@
 import classes from "./ComponentVideoBlock.module.scss";
 
-function ComponentVideoBlock({ contentModule }) {
-  const { title, videoUrl } = contentModule;
+function ComponentVideoBlock({ componentData }) {
+  const { title, videoUrl } = componentData;
   return (
     <section className={`${classes.oVideoBlock}`}>
       <div className={`${classes.oContainer} container`}>

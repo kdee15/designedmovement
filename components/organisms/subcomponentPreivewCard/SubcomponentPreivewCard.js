@@ -3,7 +3,6 @@ import React from "react";
 import ReactMarkdown from "react-markdown";
 
 function SubcomponentPreivewCard({ serviceItem }) {
-  //   const Services = serviceItem.items;
   return (
     <article className={`${classes.oCard} col-12 col-md-6`}>
       <div
