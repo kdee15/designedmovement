@@ -36,8 +36,8 @@ export default function Home({ Page }) {
   return (
     <div>
       <ComponentHeroBanner componentData={heroBanner} />
-      <ComponentServiceList componentData={serviceList} />
       <ComponentVideoBlock componentData={videoBlock} />
+      <ComponentServiceList componentData={serviceList} />
       {/* <ComponentServiceCard servicesList={servicesList} /> */}
       {/* <ComponentProfile data={profileKurt} /> */}
       {/* <ComponentProfile data={profileCompany} /> */}
