@@ -7,9 +7,7 @@ function ComponentVideoBlock({ componentData }) {
       <div className={`${classes.oContainer} container`}>
         <div className={`${classes.oRow} row`}>
           <h2 className={classes.aBlockTitle}>{title}</h2>
-          <div
-            className={`${classes.oVideo} oBlockBody col-12 col-md-6 offset-md-3`}
-          >
+          <div className={`${classes.oVideo} oBlockBody col-12`}>
             <div className={classes.blockWrapper}>
               <iframe
                 width="560"
